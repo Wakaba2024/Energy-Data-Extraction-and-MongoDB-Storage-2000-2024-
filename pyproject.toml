@@ -1,0 +1,19 @@
+[project]
+name = "energy-mongodb-project"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "beautifulsoup4>=4.14.2",
+    "matplotlib>=3.10.7",
+    "nest-asyncio>=1.6.0",
+    "pandas>=2.3.3",
+    "playwright>=1.55.0",
+    "pymongo>=4.15.3",
+    "requests>=2.32.5",
+    "seaborn>=0.13.2",
+    "selenium>=4.36.0",
+    "tqdm>=4.67.1",
+    "webdriver-manager>=4.0.2",
+]
