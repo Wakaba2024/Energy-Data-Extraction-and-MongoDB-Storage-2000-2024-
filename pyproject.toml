@@ -11,6 +11,7 @@ dependencies = [
     "pandas>=2.3.3",
     "playwright>=1.55.0",
     "pymongo>=4.15.3",
+    "python-dotenv>=1.1.1",
     "requests>=2.32.5",
     "seaborn>=0.13.2",
     "selenium>=4.36.0",
