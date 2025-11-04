@@ -78,4 +78,15 @@ uv run python export_to_csv.py
 
 ---
 
+## ⚠️ Challenges Faced
 
+| Category | Description |
+|-----------|-------------|
+| **Website Protections (403 & 500 Errors)** | The Africa Energy Portal uses **Cloudflare** protection, which initially blocked direct HTTP requests. The scraper had to be adapted to work with **Playwright**, simulating real browser behavior. |
+| **Slow Network Response / Timeouts** | Some country pages took too long to load (e.g., Cabo Verde, Côte d’Ivoire), requiring **increased timeout limits** and **retry logic** to ensure reliability. |
+| **Inconsistent URL Naming** | Country URLs vary in formatting (e.g., `cote-d’ivoire`, `sao-tome-and-principe`), so normalization logic was added for automated handling. |
+| **Incomplete Yearly Data** | Not all metrics covered every year between 2000–2024; Stage 4 handled **missing year validation** and logged issues in `validation_report.csv`. |
+| **Browser Resource Use** | Running Playwright for all African countries consumed significant system resources and time (~30 minutes total runtime). |
+
+
+---
