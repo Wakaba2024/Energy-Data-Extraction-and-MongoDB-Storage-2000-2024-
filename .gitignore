@@ -1,0 +1,18 @@
+# Ignore environment variables
+.env
+
+# Also ignore virtual environments and cache files
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+.DS_Store
+reports/raw_json/
+reports/formatted/
+reports/exports/
+reports/*.csv
+reports/*.xlsx
+
+
+
